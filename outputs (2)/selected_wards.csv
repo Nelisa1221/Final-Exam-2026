@@ -1,0 +1,4 @@
+ward,n_vd_2021,jaccard_1116,jaccard_1621,stable_1621,stable_all,leader,lead_share,margin,why,selection_basis
+59500026,5,1.0,1.0,True,True,ANC,0.3216328653146126,0.004160166406656285,most competitive,stable across all three cycles
+59500076,5,1.0,1.0,True,True,ANC,0.6085083467959074,0.3966074313408724,median margin,stable across all three cycles
+59500001,12,0.9166666666666666,1.0,True,True,ANC,0.8816106348136018,0.8334457181389077,safest,stable across all three cycles

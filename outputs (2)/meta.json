@@ -1,0 +1,92 @@
+{
+  "metro": "eThekwini",
+  "years": [
+    2011,
+    2016,
+    2021
+  ],
+  "top_party": "ANC",
+  "top_share": 0.36132432165918926,
+  "majority": false,
+  "majority_in_any_scenario": false,
+  "boundary_basis": "2021 ward footprint",
+  "lambda_": 0.5,
+  "uncertain_wards": 13,
+  "n_wards": 111,
+  "metrics": {
+    "VD_winner_temporal_holdout": {
+      "accuracy": 0.9015063731170336,
+      "macro_precision": 0.35149764880781476,
+      "macro_recall": 0.2882161360721009,
+      "macro_f1": 0.30098244104329297
+    },
+    "baseline_persistence_(last_winner_stays)": {
+      "accuracy": 0.8667439165701043,
+      "macro_precision": 0.3731620553359684,
+      "macro_recall": 0.31416565849965217,
+      "macro_f1": 0.32646854665318736
+    },
+    "baseline_majority_class": {
+      "accuracy": 0.6199304750869061,
+      "macro_precision": 0.07749130938586327,
+      "macro_recall": 0.125,
+      "macro_f1": 0.09567238912732474
+    },
+    "train_accuracy_2011to2016": 0.9899874843554443,
+    "VD_winner_grouped_cv_2016to2021": {
+      "accuracy": 0.8933951332560834,
+      "macro_precision": 0.28823987073996904,
+      "macro_recall": 0.3151042447565262,
+      "macro_f1": 0.3007743449277341
+    },
+    "ward_level_holdout": {
+      "model_accuracy": 0.9459459459459459,
+      "persistence_accuracy": 0.9279279279279279,
+      "n_wards": 111,
+      "accuracy_on_confident_calls": 0.97,
+      "share_calls_uncertain": 0.0990990990990991
+    },
+    "turnout_models": {
+      "ridge_on_relative_turnout": {
+        "MAE_relative": 0.15376871258377253,
+        "RMSE_relative": 0.1942331203799844
+      },
+      "persistence_of_relative_turnout": {
+        "MAE_relative": 0.14410412788501561,
+        "RMSE_relative": 0.18666215281096116
+      },
+      "mean_baseline": {
+        "MAE_relative": 0.18730255457007272,
+        "RMSE_relative": 0.23904768838385015
+      },
+      "ridge_pattern x TRUE 2021 level (abs. turnout)": {
+        "MAE_relative": 0.06367154331659723,
+        "RMSE_relative": 0.08042678077996175
+      },
+      "naive: 2016 VD turnout carried forward (abs.)": {
+        "MAE_relative": 0.18071927353636907,
+        "RMSE_relative": NaN
+      }
+    },
+    "turnout_method_retained": "persistence"
+  },
+  "sources": [
+    {
+      "name": "IEC municipal election results, detailed results by voting district (ETH_Ward_2011/2016/2021.csv)",
+      "url": "https://results.elections.org.za/home/Downloads/ME-Results",
+      "downloaded": "YYYY-MM-DD",
+      "file": "ETH_Ward_20xx.csv"
+    },
+    {
+      "name": "Municipal Demarcation Board, ward delimitation",
+      "url": "https://www.demarcation.org.za/",
+      "downloaded": "YYYY-MM-DD",
+      "file": "reference only"
+    }
+  ],
+  "selected_wards": [
+    "59500026",
+    "59500076",
+    "59500001"
+  ]
+}
